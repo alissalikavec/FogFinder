@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Copse);
+	
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+	position: relative;
+	text-align: center; 
+	background-color: #ADD8E6;
+	font-family: 'Copse', serif; 
+}
+
+h1 { font-weight: normal; } 
+
+div {
+	position: absolute;
+	background-color: #FFF;
+	width: 50%;
+	top: 10%;
+	left: 25%;
+	padding: 30px 20px 80px;
+}
+
+.btn {
+  position: relative;
+  top: 30px;
+  width: 182px;
+  display: inline-block;
+  border: 4px solid #74C86E;
+}
+
+.btn-inr { 
+  display: inline-block;
+  color: white;
+  background-color: #74C86E;
+  padding: 10px;
+  margin: 4px;
+}
+
+.btn-inr:hover {
+	margin: 0;
+	padding: 14px;
+	background-color: #74C86E;
+}
+
+.btn > span {
+  min-width: 154px;
+  cursor: pointer;
+}
+
+header {
+	position: absolute;
+	left: 0;
+	top: -15px;
+	right: 0;
+	padding: 5px;
+	font-size: 1.5em;
+	color: #FFF;
+	background-color: #20B2AA;
+}
+
+#case {
+	border: 0;
+	border-bottom: 2px solid #C8C8C8;
+	width: 100px;
+	outline: none;
+	font-family: 'Copse', serif; 
+	font-size: 18px;
+}
+
+#case:focus { border-bottom-color: #20B2AA; }
+
+#case-label { margin-right: 3px; }
+
+/* easing */
+.btn-inr, 
+#case {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
